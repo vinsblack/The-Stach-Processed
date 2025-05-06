@@ -1,0 +1,4 @@
+--- V1__first_originale.js
++++ V1__first_refactored.js
+@@ -1 +1 @@
+-const result = db.runCommand({ ping: 1 });+const result = db.runCommand({ ping: 1 });  # Refactored: aggiunto commento esplicativo

@@ -1,43 +1,36 @@
-# The Stack Enriched (Sample Edition)
+# Dataset Ridotto per Competizione Pubblica
 
-**The Stack Enriched (Sample Edition)** is a curated subset of the full "The Stack Enriched" dataset, designed to showcase the quality, diversity, and enrichment of our large-scale programming corpus.
+Questo dataset è una versione ridotta del dataset "The Stack" arricchito, creato specificamente per competizioni pubbliche.
 
-## Contents
+## Contenuto
 
-- **Languages:** Python, JavaScript, Java, Rust, Go, TypeScript, C/C++, PHP, C#, Ruby, and more
-- **Special collections:**
-  - Annotated code (with 15%+ comment density)
-  - Refactoring patterns (before/after)
-  - Security examples (vulnerabilities and fixes)
-  - Performance optimization patterns
-  - Framework-specific code (React, TensorFlow, PyTorch)
-- **README:** Documentation and usage instructions
+Il dataset contiene esempi rappresentativi delle seguenti categorie:
 
-## Highlights
+- **Linguaggi di programmazione**: Esempi di codice in diversi linguaggi, con particolare attenzione a linguaggi emergenti come Rust, Go e TypeScript.
+- **Framework moderni**: Esempi di codice che utilizzano framework come React, TensorFlow e PyTorch.
+- **Codice annotato**: Esempi di codice ben commentato e documentato in vari linguaggi.
+- **Refactoring**: Esempi di refactoring di codice, mostrando versioni "prima" e "dopo".
+- **Sicurezza**: Esempi di vulnerabilità di sicurezza e relative correzioni.
+- **Ottimizzazione**: Esempi di ottimizzazioni delle prestazioni del codice.
 
-- **Emerging languages:** Rust, Go, TypeScript (extensively annotated)
-- **Modern frameworks:** React, TensorFlow, PyTorch
-- **Heavily commented code:** Python, JavaScript, Java
-- **Refactoring and optimization:** Practical before/after examples
-- **Security:** Real-world vulnerabilities and their fixes
+## Licenza
 
-## Licensing
+Tutti i file inclusi in questo dataset sono disponibili con licenze open source, che ne consentono l'utilizzo per scopi di ricerca e competizioni.
 
-All files are open source and can be used for research and commercial model training, in compliance with their respective licenses (MIT, Apache, GPL, BSD, MPL, EPL).  
-**No proprietary or restricted-license code is included.**
+## Utilizzo
 
-## Full Dataset
+Questo dataset è stato creato per essere utilizzato in competizioni pubbliche di machine learning, con l'obiettivo di addestrare modelli per:
 
-This is a **sample edition**.  
-For access to the full 1.2TB "The Stack Enriched" dataset (2M+ files, advanced enrichment, and support), please contact:  
-**Vincenzo Gallo**  
-vincenzo.gallo77@hotmail.com
+1. Generare codice di alta qualità
+2. Identificare e correggere vulnerabilità di sicurezza
+3. Ottimizzare le prestazioni del codice
+4. Migliorare la leggibilità e la manutenibilità del codice
 
-## Citation
+## Statistiche
 
-If you use this dataset, please cite:  
-> Gallo, V. (2024). The Stack Enriched: Annotated, Secure, and Optimized Code Dataset for Modern AI.
-
----
-
-**Enjoy exploring modern, secure, and well-documented code!**
+- **linguaggi**: 5004 file
+- **framework**: 1217 file
+- **codice_annotato**: 1500 file
+- **refactoring**: 25 file
+- **sicurezza**: 100 file
+- **ottimizzazione**: 100 file

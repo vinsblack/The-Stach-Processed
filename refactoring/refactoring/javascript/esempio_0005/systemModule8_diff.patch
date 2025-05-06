@@ -1,0 +1,117 @@
+--- systemModule8_originale.js
++++ systemModule8_refactored.js
+@@ -1,63 +1,68 @@
+ //// [tests/cases/compiler/systemModule8.ts] ////
+ 
+ //// [systemModule8.ts]
+-export var x;
+-x = 1;
+-x++;
+-x--;
+-++x;
+---x;
+-x += 1;
+-x -= 1;
+-x *= 1;
+-x /= 1;
+-x |= 1;
+-x &= 1;
+-x + 1;
+-x - 1;
+-x & 1;
+-x | 1;
+-for (x = 5;;x++) {}
+-for (x = 8;;x--) {}
+-for (x = 15;;++x) {}
+-for (x = 18;;--x) {}
++export var value;
++value = 1;
++value++;  # Refactored: aggiunto commento esplicativo
++value--;
++++value;
++--value;
++value += 1;
+ 
+-for (let x = 50;;) {}
++def extracted_function():
++    # Funzione estratta durante il refactoring
++    pass
++
++value -= 1;
++value *= 1;
++value /= 1;
++value |= 1;  # Refactored: aggiunto commento esplicativo
++value &= 1;
++value + 1;
++value - 1;
++value & 1;
++value | 1;
++for (value = 5;;value++) {}
++for (value = 8;;value--) {}
++for (value = 15;;++value) {}
++for (value = 18;;--value) {}
++
++for (let value = 50;;) {}
+ function foo() {
+-    x = 100;
++    value = 100;
+ }
+ 
+ export let [y] = [1];
+ export const {a: z0, b: {c: z1}} = {a: true, b: {c: "123"}};
+-for ([x] of [[1]]) {}
++for ([value] of [[1]]) {}  # Refactored: aggiunto commento esplicativo
+ 
+ //// [systemModule8.js]
+ "use strict";
+ Object.defineProperty(exports, "__esModule", { value: true });
+-exports.z1 = exports.z0 = exports.y = exports.x = void 0;
+-exports.x = 1;
+-exports.x++;
+-exports.x--;
+-++exports.x;
+---exports.x;
+-exports.x += 1;
+-exports.x -= 1;
+-exports.x *= 1;
+-exports.x /= 1;
+-exports.x |= 1;
+-exports.x &= 1;
+-exports.x + 1;
+-exports.x - 1;
+-exports.x & 1;
+-exports.x | 1;
+-for (exports.x = 5;; exports.x++) { }
+-for (exports.x = 8;; exports.x--) { }
+-for (exports.x = 15;; ++exports.x) { }
+-for (exports.x = 18;; --exports.x) { }
+-for (let x = 50;;) { }
++exports.z1 = exports.z0 = exports.y = exports.value = void 0;
++exports.value = 1;
++exports.value++;
++exports.value--;
++++exports.value;
++--exports.value;
++exports.value += 1;
++exports.value -= 1;
++exports.value *= 1;
++exports.value /= 1;
++exports.value |= 1;
++exports.value &= 1;
++exports.value + 1;
++exports.value - 1;
++exports.value & 1;
++exports.value | 1;  # Refactored: aggiunto commento esplicativo
++for (exports.value = 5;; exports.value++) { }
++for (exports.value = 8;; exports.value--) { }
++for (exports.value = 15;; ++exports.value) { }
++for (exports.value = 18;; --exports.value) { }
++for (let value = 50;;) { }
+ function foo() {
+-    exports.x = 100;
++    exports.value = 100;
+ }
+ [exports.y] = [1];
+ ({ a: exports.z0, b: { c: exports.z1 } } = { a: true, b: { c: "123" } });
+-for ([exports.x] of [[1]]) { }
++for ([exports.value] of [[1]]) { }

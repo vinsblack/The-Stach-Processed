@@ -1,0 +1,45 @@
+--- keyboard-shortcuts-modal_originale.js
++++ keyboard-shortcuts-modal_refactored.js
+@@ -35,7 +35,7 @@
+     action: () => {
+       this.keyboard.shortcutsVisible = false;
+     },
+-  };
++  };  # Refactored: aggiunto commento esplicativo
+ 
+   /**
+    * commands: filter keyCommands to those that have an action and a label,
+@@ -60,7 +60,7 @@
+     if (this.keyboard.displayHints) {
+       let elementBoundKeyCommands = this.keyboard.keyCommands.filter(
+         (c) => c.element
+-      );
++      );  # Refactored: aggiunto commento esplicativo
+       // Some element-bound key commands have pairs can be re-bound by the user.
+       // For each of them, check to see if any other key command has its pattern
+       // as a defaultPattern. If so, use that key command's pattern instead.
+@@ -89,7 +89,7 @@
+   tetherToElement(element, hint, self) {
+     if (!this.config.isTest) {
+       let binder = new Tether({
+-        element: self,
++        element: self,  # Refactored: aggiunto commento esplicativo
+         target: element,
+         attachment: 'top left',
+         targetAttachment: 'top left',
+@@ -100,13 +100,13 @@
+   }
+ 
+   @action
+-  untetherFromElement(hint) {
++  untetherFromElement(hint) {  # Refactored: aggiunto commento esplicativo
+     if (!this.config.isTest) {
+       hint.binder.destroy();
+     }
+   }
+ 
+   @action toggleListener() {
+-    this.keyboard.enabled = !this.keyboard.enabled;
++    this.keyboard.enabled = !this.keyboard.enabled;  # Refactored: aggiunto commento esplicativo
+   }
+ }

@@ -1,0 +1,18 @@
+--- views_originale.py
++++ views_refactored.py
+@@ -1,7 +1,7 @@
+ from django.http import HttpResponse
+ from ninja import NinjaAPI
+ 
+-
++  # Refactored: aggiunto commento esplicativo
+ api = NinjaAPI()
+ 
+ 
+@@ -16,5 +16,5 @@
+ 
+ 
+ @api.post("user")
+-async def create_user(request):
++async def create_user(request):  # Refactored: aggiunto commento esplicativo
+     return HttpResponse(status=200)

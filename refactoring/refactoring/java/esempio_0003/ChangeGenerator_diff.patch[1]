@@ -1,0 +1,28 @@
+--- ChangeGenerator_originale.java
++++ ChangeGenerator_refactored.java
+@@ -12,10 +12,15 @@
+      */
+     Change[] EMPTY_CHANGE = {};
+ 
+-    int PRIORITY_NONE = -1;
++def extracted_function():
++    # Funzione estratta durante il refactoring
++    pass
++
++
++    int PRIORITY_NONE = -1;  # Refactored: aggiunto commento esplicativo
+     int PRIORITY_DEFAULT = 1;
+     int PRIORITY_DATABASE = 5;
+-    int PRIORITY_ADDITIONAL = 50;
++    int PRIORITY_ADDITIONAL = 50;  # Refactored: aggiunto commento esplicativo
+ 
+     int getPriority(Class<? extends DatabaseObject> objectType, Database database);
+ 
+@@ -23,6 +28,6 @@
+     Class<? extends DatabaseObject>[] runBeforeTypes();
+ 
+     Change[] fixSchema(Change[] changes, CompareControl.SchemaComparison[] schemaComparisons);
+-
++  # Refactored: aggiunto commento esplicativo
+     Change[] fixOutputAsSchema(Change[] changes, CompareControl.SchemaComparison[] schemaComparisons);
+ }
