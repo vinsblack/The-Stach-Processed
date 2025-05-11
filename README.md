@@ -99,12 +99,12 @@ Per informazioni sull'acquisizione del dataset completo, richieste di demo estes
 per approfondimenti tecnici.
 
 // Esempio di codice Rust con pattern di sicurezza avanzati
-pub fn validate_user_input(input: &str) -> Result<UserData, ValidationError> {
+
+    pub fn validate_user_input(input: &str) -> Result<UserData, ValidationError> {
     // Verifica di sicurezza: blocco di iniezioni SQL
     if input.contains("SELECT") || input.contains("DROP") {
         return Err(ValidationError::PotentialSqlInjection);
     }
-    
     // Log di sicurezza per audit trail
     log::info!("Input validato: lunghezza {}", input.len());
     
