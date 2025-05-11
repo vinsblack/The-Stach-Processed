@@ -1,6 +1,6 @@
 # The-Stack-Processed: Dataset Premium per LLM di Nuova Generazione
 
-![Banner](https://via.placeholder.com/1200x300/0366d6/FFFFFF/?text=The-Stack-Processed)
+![The-Stack-Processed Banner](./banner.svg)
 
 ## 🚀 Dataset di Nuova Generazione per LLM Superiori
 
