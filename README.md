@@ -96,6 +96,7 @@ pub fn validate_user_input(input: &str) -> Result<UserData, ValidationError> {
 
 > "La differenza nella generazione di codice sicuro è notevole. Abbiamo ridotto le vulnerabilità del 35% nei progetti che utilizzano il nostro modello addestrato su questo dataset." - Responsabile sicurezza di un'azienda Fortune 500
 
----
+[![Sponsor](https://img.shields.io/badge/Sponsor-vinsblack-blueviolet?logo=github)](https://github.com/sponsors/vinsblack)
+
 
 © 2025 The-Stack-Processed | Dataset di Qualità Premium per LLM di Nuova Generazione
